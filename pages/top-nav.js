@@ -34,7 +34,8 @@ export default function TopNav() {
   const container = useRef();
 
   useGSAP(() => {
-    gsap.to(".dclogo", { rotation: "+=360", duration: 3 });
+    console.log(container);
+    gsap.fromTo(".dclogo", { opacity: 0 }, { opacity: 0.5, duration: 1 });
   }, {scope: container});
 
   return (

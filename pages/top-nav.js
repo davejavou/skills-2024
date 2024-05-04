@@ -23,7 +23,7 @@ const ExploreMenu = () => {
 
 const BurgerMenu = () => {
   return (
-    <Icon className="hippo btn-icon" icon={faBars} />
+    <Icon className="btn-icon" icon={faBars} />
     // External Links: Portfolio, LinkedIn, Resume, Cove
     // Contact David
     // Big button to email
@@ -32,21 +32,19 @@ const BurgerMenu = () => {
 
 export default function TopNav() {
   const container = useRef();
-  console.log("Test 1");
+
   useGSAP(() => {
-    console.log("Test 2");
-    console.log(container)
-    gsap.to(".hippo", { opacity: 1, x: 50, y: 50, rotation: 27, duration: 1 });
+    gsap.to(".dclogo", { rotation: "+=360", duration: 3 });
   }, {scope: container});
 
   return (
-    <nav className="fixed top-0 left-0 flex justify-between w-screen h-20 bg-blue-800/50">
+    <nav ref={container} className="fixed top-0 left-0 flex justify-between w-screen h-20 bg-blue-800/50">
       <ExploreMenu />
       <hr className="h-px flex-grow bg-white" />
       <img
         src="/logo.svg"
         alt="Dave Cutter's Logo"
-        className="hippo"
+        className="dclogo"
         width={100}
         height={100}
       />

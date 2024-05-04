@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* Font Imports must be first lines in css file */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

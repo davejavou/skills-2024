@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import TopNav from "./top-nav";
 
 export default function Document() {
   return (
@@ -9,6 +10,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="https://davecutter.com/portfolio/public/favicon-16x16.png" />
       </Head>
       <body>
+        <TopNav />
         <Main />
         <NextScript />
       </body>

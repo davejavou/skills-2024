@@ -41,3 +41,7 @@ body {
     text-wrap: balance;
   }
 }
+
+svg {
+  fill: currentColor;
+}

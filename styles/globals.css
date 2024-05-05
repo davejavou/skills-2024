@@ -45,3 +45,12 @@ body {
 svg {
   fill: currentColor;
 }
+
+.h-rule {
+  @apply h-px flex-grow self-center bg-white/50;
+}
+
+.v-rule {
+  @apply w-px flex-grow self-center bg-white/50;
+}
+

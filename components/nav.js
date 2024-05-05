@@ -9,17 +9,20 @@ import { usePathname} from 'next/navigation';
 
 gsap.registerPlugin(useGSAP);
 
-const ExploreLinks = [
-	{ id: 1, name: 'Skills', path: '/' },
-	{ id: 2, name: 'Roles', path: '/roles' },
-	{ id: 3, name: 'Places', path: '/places' },
-];
 
+// EXPLORE MENU
 const ExploreMenu = () => {
+  const ExploreLinks = [
+    { id: 1, name: 'Skills', path: '/' },
+    { id: 2, name: 'Roles', path: '/roles' },
+    { id: 3, name: 'Places', path: '/places' },
+  ];
+
   const pathname = usePathname();
   const isActive = (path) => path === pathname;
-
-  const [exploreToggle, setExploreToggle] = useState(true);
+  
+  // 🤔 This initial state is the opposite of what I think it should be, but works. Something wonky afoot.
+  const [exploreToggle, setExploreToggle] = useState(false);
 
   const container = useRef();
   const { contextSafe } = useGSAP({scope: container});
@@ -57,20 +60,26 @@ const ExploreMenu = () => {
   )
 }
 
-const BurgerMenu = () => {
+
+// BURGER MENU
+const BurgerMenu = ({toggleContactMenu}) => {
   return (
     <div className="flex flex-col gap-4 h-screen pt-8 uppercase tracking-widest leading-loose pointer-events-auto text-white/50 hover:text-white duration-300">
-      <Icon className="btn-icon self-center mr-4" size="1x" icon={faBars} />
+      <button className="self-center mr-4" onClick={(e) => toggleContactMenu(e)}>
+        <Icon className="btn-icon" size="1x" icon={faBars} />
+      </button>
       <div className="v-rule mr-10 mr-4 mb-10" />
     </div>
   )
 }
 
-export default function TopNav() {
+
+// NAV
+export default function Nav({toggleContactMenu}) {
   const container = useRef();
 
   useGSAP(() => {
-    gsap.fromTo("#logo", { opacity: 0, rotation: -30 }, { opacity: 0.8, rotation: 0, duration: 1 });
+    gsap.fromTo("#logo", { opacity: 0, scale: 1.1, rotation: -45 }, { opacity: 0.8, scale: 1, rotation: 0, duration: 3 });
   }, {scope: container});
 
   return (
@@ -87,7 +96,7 @@ export default function TopNav() {
       />
       <div className="flex gap-6 pr-6 pl-10 w-[calc(50%-3rem)]">
         <div className="h-rule" />
-        <BurgerMenu />
+        <BurgerMenu toggleContactMenu={toggleContactMenu} />
       </div>
     </nav>
   )

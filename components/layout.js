@@ -19,10 +19,13 @@ export default function Layout({ children }) {
     e.stopPropagation();
     setContactToggle(!contactToggle);
     if (contactToggle) {
-      gsap.to("#contact-window", { opacity: 1, width: "100%", duration: 0.5 });
-      gsap.fromTo("#logo", { opacity: 0, scale: 1.4, rotation: -45 }, { opacity: 1, scale: 1, rotation: 0, duration: 2 });
+      gsap.to("#links", { left: 0, duration: 0.5 });
+      gsap.to("#email", { left: "34vw", duration: 0.5 });
+      gsap.to("#social", { right: 0, duration: 0.5 });
+      gsap.fromTo("#logo", { scale: 1.4, rotation: -45 }, { scale: 1, rotation: 0, duration: 2 });
     } else {
-      gsap.to("#contact-window", { opacity: 0, width: "0%", duration: 0.5 });
+      gsap.to("#links, #email", { left: "100vw", duration: 0.5 });
+      gsap.to("#social", { right: "-80px", duration: 0.5 });
     }
   });
 

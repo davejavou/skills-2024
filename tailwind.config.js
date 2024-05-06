@@ -7,8 +7,9 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["VT323", "ui-sans-serif", "system-ui", "Arial", "sans-serif"],
+      sans: ["Work Sans", "ui-sans-serif", "system-ui", "Arial", "sans-serif"],
       serif: ["VT323", "ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+      header: ["Anton", "ui-sans-serif", "system-ui", "Arial", "sans-serif"],
     },
     extend: {
       backgroundImage: {

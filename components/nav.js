@@ -64,7 +64,7 @@ const ExploreMenu = () => {
 // BURGER MENU
 const BurgerMenu = ({toggleContactMenu}) => {
   return (
-    <div className="flex flex-col w-[80px] h-screen gap-4 pointer-events-auto">
+    <div className="flex flex-col w-[80px] h-screen pointer-events-auto">
 {/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2796461954. */}
       <button className="self-center w-[80px] h-[80px] mt-1 flex items-center justify-center text-white/50 hover:text-white duration-30" onClick={(e) => toggleContactMenu(e)}>
         <Icon className="btn-icon" size="1x" icon={faBars} />

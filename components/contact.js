@@ -15,7 +15,7 @@ export default function Contact({ contactRef, toggleContactMenu }) {
 
   return (
     <div ref={contactRef}>
-      <div id="links" className="left-[100vw] contact-box left-0 w-[34vw] px-16 pt-12 bg-sky-900/80">
+      <div id="links" className="left-[100vw] contact-box w-[34vw] px-16 pt-12 bg-sky-900/80">
         <ReactSVG
           src="/logo.svg"
           alt="Dave Cutter's Logo"
@@ -43,16 +43,16 @@ export default function Contact({ contactRef, toggleContactMenu }) {
           Design by jtb Studios
         </p>
       </div>
-      <div id="email" className="left-[100vw] contact-box left-[34vw] w-[calc(66vw-80px)] px-16 pt-16 text-sky-900 bg-white">
+      <div id="email" className="left-[100vw] contact-box w-[calc(66vw-80px)] px-16 pt-16 text-sky-900 bg-white">
         <h1 className="contact-content text-8xl font-header uppercase">Sign with Dave</h1>
         <p className="contact-content font-sans mt-8 max-w-xl">
           I’m a product designer and front-end developer with 25 years experience in software product development for startup & enterprise clients. I specialise in human-centred design, intuitive UX & UI, and elegant front-end code. I also study the History & Philosophy of Science and International Politics at the University of Melbourne.
           <a target="_blank" rel="noopener noreferrer" href="mailto:dave@davecutter.com" className="block rounded-full float-left mt-8 py-6 px-24 uppercase font-serif text-2xl tracking-wides text-white bg-sky-900 hover:bg-sky-300 hover:text-sky-900 duration-300">Email Dave</a>
         </p>
       </div>
-      <div id="social" className="right-[-80px] contact-box right-0 w-[80px] items-center justify-center bg-black">
+      <div id="social" className="right-[-80px] contact-box w-[80px] items-center justify-center bg-black">
         <button className="mb-auto border-b border-white/50 w-full h-[80px] flex justify-center items-center text-white/50 hover:text-white duration-300" onClick={(e) => toggleContactMenu(e)}>
-          <Icon className="btn-icon" size="2x" icon={faX} />
+          <Icon className="btn-icon" size="xl" icon={faX} />
         </button>
         <div className="flex flex-col flex-col-reverse justify-center items-center mb-auto">
           <span className="-rotate-90 uppercase whitespace-nowrap text-xl">Follow Me</span>
@@ -61,7 +61,7 @@ export default function Contact({ contactRef, toggleContactMenu }) {
               return (
                 <li key={link.id} className="my-3">
                   <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white">
-                    <Icon className="btn-icon" size="2x" icon={link.icon} />
+                    <Icon className="btn-icon" size="xl" icon={link.icon} />
                   </a>
                 </li>
               );

@@ -23,9 +23,10 @@ export default function Layout({ children }) {
       gsap.to("#email", { left: "34vw", duration: 0.5 });
       gsap.to("#social", { right: 0, duration: 0.5 });
       gsap.fromTo("#logo", { scale: 1.4, rotation: -45 }, { scale: 1, rotation: 0, duration: 2 });
+      gsap.fromTo(".contact-content", {scale: 1.1, y: 50}, { scale: 1, y: 0, duration: 0.5, stagger: 0.05 });
     } else {
-      gsap.to("#links, #email", { left: "100vw", duration: 0.5 });
-      gsap.to("#social", { right: "-80px", duration: 0.5 });
+      gsap.to("#links, #email", { left: "100vw", duration: 0.3 });
+      gsap.to("#social", { right: "-80px", duration: 0.3 });
     }
   });
 

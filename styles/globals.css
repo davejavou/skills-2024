@@ -48,11 +48,17 @@ svg {
   fill: currentColor;
 }
 
+/* Custom Classes for this Project */
+
 .h-rule {
   @apply h-px flex-grow self-center bg-white/50;
 }
 
 .v-rule {
   @apply w-px flex-grow self-center bg-white/50;
+}
+
+.contact-box {
+  @apply fixed top-0 h-full flex flex-col flex-none backdrop-blur-sm;
 }
 

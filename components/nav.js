@@ -64,11 +64,12 @@ const ExploreMenu = () => {
 // BURGER MENU
 const BurgerMenu = ({toggleContactMenu}) => {
   return (
-    <div className="flex flex-col gap-4 h-screen pt-8 uppercase tracking-widest leading-loose pointer-events-auto text-white/50 hover:text-white duration-300">
-      <button className="self-center mr-4" onClick={(e) => toggleContactMenu(e)}>
+    <div className="flex flex-col w-[80px] h-screen gap-4 pointer-events-auto">
+{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2796461954. */}
+      <button className="self-center w-[80px] h-[80px] mt-1 flex items-center justify-center text-white/50 hover:text-white duration-30" onClick={(e) => toggleContactMenu(e)}>
         <Icon className="btn-icon" size="1x" icon={faBars} />
       </button>
-      <div className="v-rule mr-10 mr-4 mb-10" />
+      <div className="v-rule mb-10" />
     </div>
   )
 }
@@ -94,7 +95,7 @@ export default function Nav({toggleContactMenu}) {
         id="logo"
         className="fill-white w-20 h-20 mt-2 ml-2"
       />
-      <div className="flex gap-6 pr-6 pl-10 w-[calc(50%-3rem)]">
+      <div className="flex pl-10 w-[calc(50%-3rem)]">
         <div className="h-rule" />
         <BurgerMenu toggleContactMenu={toggleContactMenu} />
       </div>

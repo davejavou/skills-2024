@@ -33,7 +33,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Background />
-      <main className="relative flex w-screen h-screen">
+      <main className="relative w-screen h-screen p-20">
         {children}
       </main>
       <Nav toggleContactMenu={toggleContactMenu} />

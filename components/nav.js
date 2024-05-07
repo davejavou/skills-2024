@@ -35,8 +35,8 @@ const ExploreMenu = () => {
   });
 
   return (
-    <div ref={container} className="flex flex-col gap-2 h-screen pt-8 uppercase tracking-widest leading-loose pointer-events-auto">
-      <button className="flex items-center text-xl text-white/50 hover:text-white duration-300" onClick={(e) => toggleExploreMenu(e)}>
+    <div ref={container} className="flex flex-col gap-2 h-screen pt-8 uppercase tracking-widest leading-loose">
+      <button className="flex items-center text-xl text-white/50 hover:text-white duration-300 pointer-events-auto" onClick={(e) => toggleExploreMenu(e)}>
         <Icon className="mr-2" size="xs" icon={faGripVertical} />
         Explore
       </button>

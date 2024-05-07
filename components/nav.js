@@ -6,18 +6,13 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { faBars, faGripVertical } from '@fortawesome/free-solid-svg-icons'
 import { ReactSVG } from "react-svg";
 import { usePathname} from 'next/navigation';
+import { exploreLinks } from "@/data/content";
 
 gsap.registerPlugin(useGSAP);
 
 
 // EXPLORE MENU
 const ExploreMenu = () => {
-  const ExploreLinks = [
-    { id: 1, name: 'Skills', path: '/' },
-    { id: 2, name: 'Roles', path: '/roles' },
-    { id: 3, name: 'Places', path: '/places' },
-  ];
-
   const pathname = usePathname();
   const isActive = (path) => path === pathname;
   
@@ -46,7 +41,7 @@ const ExploreMenu = () => {
         Explore
       </button>
       <ul>
-        {ExploreLinks.map((link) => {
+        {exploreLinks.map((link) => {
           return (
             <li key={link.id} className={`${isActive(link.path) ? 'text-white' : 'text-white/50'} hover:text-white duration-300`}>
               {isActive(link.path) && <span className="mr-2">&bull;</span>}

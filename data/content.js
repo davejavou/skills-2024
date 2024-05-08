@@ -2,8 +2,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBookOpen, faFilePdf, faFish } from '@fortawesome/free-solid-svg-icons'
 
 export const exploreLinks = [
-    { id: 1, name: 'Skills', path: '/' },
-    { id: 2, name: 'Roles', path: '/roles' },
+    { id: 1, name: 'Roles', path: '/' },
+    { id: 2, name: 'Skills', path: '/skills' },
     { id: 3, name: 'Places', path: '/places' },
 ];
 

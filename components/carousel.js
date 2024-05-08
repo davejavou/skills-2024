@@ -43,7 +43,7 @@ function slideContent({ type, ssrc, psrc }) {
     );
 }
 
-export default function Carousel({ cardIndex, slides, sliderRef }) {
+export default function Carousel({ sectionIndex, slides, sliderRef }) {
     // 🤔 Must sanitize projects data
 
     // Configure Carosuel
@@ -61,14 +61,14 @@ export default function Carousel({ cardIndex, slides, sliderRef }) {
 
     return (
         // 🤔 I am still getting "Each child in a list should have a unique key prop" warnings on this line
-        <div key={`media-${cardIndex}`} className="card-media">
+        <div key={`media-${sectionIndex}`} className="section-media">
             {(slides.length < 2) ?
                 // No Slider if only one slide  
                 slides.map((slide) => slideContent(slide))
                 :
                 <Slider ref={sliderRef} {...sliderSettings} className="max-w-[1280px] mx-auto">
                     {slides.map((slide, slideIndex) =>
-                        <div key={`slide-${cardIndex}-${slideIndex}`}> {/* This container div will be styled by react-slick carosuel. Do not style or add classes */}
+                        <div key={`slide-${sectionIndex}-${slideIndex}`}> {/* This container div will be styled by react-slick carosuel. Do not style or add classes */}
                             {slideContent(slide)}
                         </div>
                     )}

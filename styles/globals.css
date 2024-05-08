@@ -59,27 +59,27 @@ svg {
 }
 
 .contact-box {
-  @apply fixed top-0 h-full flex flex-col flex-none backdrop-blur-sm;
+  @apply fixed top-0 h-full flex flex-col flex-none backdrop-blur-md;
 }
 
-.card {
+.section {
   @apply flex p-4 mb-12 backdrop-blur-sm gap-2;
 }
 
-.card:nth-child(even) {
+.section:nth-child(even) {
   @apply flex-row-reverse;
 }
 
-.card-details {
+.section-details {
   @apply w-1/3 flex-none flex flex-col justify-center;
 }
 
-.card-media {
+.section-media {
   @apply w-2/3 flex-none;
 }
 
 .dusty-font {
-  @apply text-transparent bg-white bg-clip-text bg-cover drop-shadow-2xl mb-12;
+  @apply text-transparent bg-white bg-clip-text bg-cover drop-shadow-2xl;
   background-image: url(/img/dust.png);
 }
 

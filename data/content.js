@@ -372,7 +372,7 @@ export const skills = [
     },
     {
         id: 7,
-        "title": "Figma, Sketch, and XD",
+        "title": "Figma, Sketch, & XD",
         "paragraph": "Exploring design tools like Figma, Sketch, and XD has been instrumental in my evolution as a web/UI/UX designer. These powerful platforms are my creative playground, where ideas transform into tangible prototypes and designs. Figma's collaborative features, Sketch's robust plugins, and XD's seamless integration with other Adobe products offer unique advantages for designing immersive user experiences. Leveraging these tools, I can swiftly translate concepts into wireframes, mockups, and interactive prototypes. The intuitive interfaces of Figma, Sketch, and XD enhance my productivity and enable seamless collaboration with stakeholders. These design tools have become indispensable companions that empower me to bring innovation and creativity to every project.",
         "image": "/img/figmasketchxd.png"
     },

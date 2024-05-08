@@ -10,7 +10,7 @@ const Card = ({ cardData }) => {
   return (
     <div className="card">
       <div className="card-details">
-        <h2 className="dusty-font mb-4 text-7xl font-header uppercase">{cardData.title}</h2>
+        <h2 className="dusty-font mb-12 text-7xl font-header uppercase">{cardData.title}</h2>
         <p className="mt-4 font-sans text-l">{cardData.paragraph}</p>
       </div>
       <div className="card-media flex justify-center items-center">

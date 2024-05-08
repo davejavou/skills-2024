@@ -23,6 +23,7 @@ export const aboutDave = "I’m Dave, a product designer and front-end developer
 
 export const roles = [
     {
+        id: 1,
         client: "Art Processors",
         location: "Melbourne",
         timeline: "Feb 2021 - Apr 2024",
@@ -40,6 +41,7 @@ export const roles = [
         ],
     },
     {
+        id: 2,
         client: "mod.io",
         location: "Melbourne",
         timeline: "Aug 2020 - Feb 2021",
@@ -84,6 +86,7 @@ export const roles = [
         ],
     },
     {
+        id: 3,
         client: "Sports Performance Tracking",
         location: "Melbourne",
         timeline: "Feb 2019 - Feb 2021",
@@ -169,6 +172,7 @@ export const roles = [
         ],
     },
     {
+        id: 4,
         client: "ESPN",
         location: "Melbourne",
         timeline: "Jan 2016 - Feb 2019",
@@ -221,6 +225,7 @@ export const roles = [
         ],
     },
     {
+        id: 5,
         client: "Yahoo Sports",
         location: "Los Angeles",
         timeline: "Jul 2010 - Nov 2013",
@@ -253,6 +258,7 @@ export const roles = [
         ],
     },
     {
+        id: 6,
         client: "Meteor Games",
         location: "Los Angeles",
         timeline: "Jan 2007 - Jul 2010",
@@ -328,40 +334,59 @@ export const roles = [
 
 export const skills = [
     {
+        id: 1,
         "title": "Photoshop",
-        "paragraph": "In my journey as a web/UI/UX designer, mastering Photoshop has been transformative. This tool is my canvas, where I bring imagination to life. From crafting sleek user interfaces to designing captivating web layouts, Photoshop empowers me to visualize concepts with precision and finesse. Its array of features, from layers and masks to filters and effects, allows me to delve deep into the art of digital design. Whether I'm refining typography or fine-tuning color schemes, Photoshop is my trusted companion for crafting pixel-perfect visuals that resonate with users. Through this software, I've honed my eye for detail and developed a keen understanding of design principles that elevate user experiences."
+        "paragraph": "In my journey as a web/UI/UX designer, mastering Photoshop has been transformative. This tool is my canvas, where I bring imagination to life. From crafting sleek user interfaces to designing captivating web layouts, Photoshop empowers me to visualize concepts with precision and finesse. Its array of features, from layers and masks to filters and effects, allows me to delve deep into the art of digital design. Whether I'm refining typography or fine-tuning color schemes, Photoshop is my trusted companion for crafting pixel-perfect visuals that resonate with users. Through this software, I've honed my eye for detail and developed a keen understanding of design principles that elevate user experiences.",
+        "image": "/img/photoshop.png"
     },
     {
+        id: 2,
         "title": "Custom CSS",
-        "paragraph": "As a frontend developer, delving into custom CSS has been a game-changer. This language is where design meets functionality, enabling me to create responsive and dynamic web experiences. Harnessing the power of CSS, I can transform static mockups into interactive, engaging interfaces. From implementing intricate animations to ensuring seamless responsiveness across devices, custom CSS empowers me to breathe life into designs. The ability to manipulate styles with precision, coupled with a deep understanding of layout structures, allows me to optimize user interactions. Custom CSS isn't just a tool; it's a language that speaks volumes about the artistry behind frontend development."
+        "paragraph": "As a frontend developer, delving into custom CSS has been a game-changer. This language is where design meets functionality, enabling me to create responsive and dynamic web experiences. Harnessing the power of CSS, I can transform static mockups into interactive, engaging interfaces. From implementing intricate animations to ensuring seamless responsiveness across devices, custom CSS empowers me to breathe life into designs. The ability to manipulate styles with precision, coupled with a deep understanding of layout structures, allows me to optimize user interactions. Custom CSS isn't just a tool; it's a language that speaks volumes about the artistry behind frontend development.",
+        "image": "/img/css.png"
     },
     {
+        id: 3,
         "title": "React",
-        "paragraph": "Exploring React as a web/UI/UX designer and frontend developer has been nothing short of exhilarating. This JavaScript library embodies the essence of modern web development, offering a robust framework for building dynamic user interfaces. With React, I can architect scalable applications while maintaining a modular and reusable codebase. Its component-based architecture aligns perfectly with the principles of design systems, enabling me to streamline development workflows. Through React, I've embraced the power of declarative programming, where building complex UIs becomes intuitive and efficient. This library has not only enhanced my technical prowess but also deepened my appreciation for crafting seamless digital experiences that resonate with users."
+        "paragraph": "Exploring React as a web/UI/UX designer and frontend developer has been nothing short of exhilarating. This JavaScript library embodies the essence of modern web development, offering a robust framework for building dynamic user interfaces. With React, I can architect scalable applications while maintaining a modular and reusable codebase. Its component-based architecture aligns perfectly with the principles of design systems, enabling me to streamline development workflows. Through React, I've embraced the power of declarative programming, where building complex UIs becomes intuitive and efficient. This library has not only enhanced my technical prowess but also deepened my appreciation for crafting seamless digital experiences that resonate with users.",
+        "image": "/img/react.png"
     },
     {
+        id: 4,
         "title": "Human-Centered Design",
-        "paragraph": "In my exploration of human-centered design, I have discovered a profound approach that prioritizes empathy and user engagement. This methodology has reshaped my perspective as a web/UI/UX designer, placing the user at the heart of every decision. Human-centered design challenges me to deeply understand user needs, behaviors, and motivations. Through empathetic research and iterative prototyping, I craft experiences that resonate on a personal level. This approach fosters collaboration and interdisciplinary thinking, allowing me to integrate user feedback seamlessly into the design process. Human-centered design isn't just about creating visually appealing interfaces; it's about forging meaningful connections between technology and human experiences."
+        "paragraph": "In my exploration of human-centered design, I have discovered a profound approach that prioritizes empathy and user engagement. This methodology has reshaped my perspective as a web/UI/UX designer, placing the user at the heart of every decision. Human-centered design challenges me to deeply understand user needs, behaviors, and motivations. Through empathetic research and iterative prototyping, I craft experiences that resonate on a personal level. This approach fosters collaboration and interdisciplinary thinking, allowing me to integrate user feedback seamlessly into the design process. Human-centered design isn't just about creating visually appealing interfaces; it's about forging meaningful connections between technology and human experiences.",
+        "image": "/img/hcd.png"
     },
     {
+        
+        id: 5,
         "title": "Design Research",
-        "paragraph": "Embarking on the journey of design research has unveiled a world of insights and possibilities. As a web/UI/UX designer, conducting rigorous research informs every aspect of my creative process. From user interviews and surveys to competitive analysis and usability testing, design research equips me with invaluable data to make informed design decisions. This methodology empowers me to uncover user pain points, validate assumptions, and discover innovative solutions. By immersing myself in the user's world, I gain a holistic understanding of their needs and aspirations. Design research fuels my creativity and ensures that my designs are not only visually appealing but also purposeful and user-centric. Through this process, I continuously refine my skills as a designer and advocate for the importance of evidence-based design practices."
+        "paragraph": "Embarking on the journey of design research has unveiled a world of insights and possibilities. As a web/UI/UX designer, conducting rigorous research informs every aspect of my creative process. From user interviews and surveys to competitive analysis and usability testing, design research equips me with invaluable data to make informed design decisions. This methodology empowers me to uncover user pain points, validate assumptions, and discover innovative solutions. By immersing myself in the user's world, I gain a holistic understanding of their needs and aspirations. Design research fuels my creativity and ensures that my designs are not only visually appealing but also purposeful and user-centric. Through this process, I continuously refine my skills as a designer and advocate for the importance of evidence-based design practices.",
+        "image": "/img/research.jpg"
     },
     {
+        id: 6,
         "title": "Design Systems",
-        "paragraph": "In my journey as a web/UI/UX designer, diving into design systems has revolutionized how I approach consistency and scalability in design. Design systems provide a structured framework that harmonizes visual elements, interactions, and code components across projects. They are more than just style guides; they embody a holistic approach to design, fostering collaboration and efficiency. Building and maintaining design systems allow me to create cohesive user experiences while reducing redundancy and promoting reusability. Through design systems, I ensure brand integrity and streamline the development process, empowering teams to deliver cohesive and user-centric products."
+        "paragraph": "In my journey as a web/UI/UX designer, diving into design systems has revolutionized how I approach consistency and scalability in design. Design systems provide a structured framework that harmonizes visual elements, interactions, and code components across projects. They are more than just style guides; they embody a holistic approach to design, fostering collaboration and efficiency. Building and maintaining design systems allow me to create cohesive user experiences while reducing redundancy and promoting reusability. Through design systems, I ensure brand integrity and streamline the development process, empowering teams to deliver cohesive and user-centric products.",
+        "image": "/img/design-system.png"
     },
     {
+        id: 7,
         "title": "Figma, Sketch, and XD",
-        "paragraph": "Exploring design tools like Figma, Sketch, and XD has been instrumental in my evolution as a web/UI/UX designer. These powerful platforms are my creative playground, where ideas transform into tangible prototypes and designs. Figma's collaborative features, Sketch's robust plugins, and XD's seamless integration with other Adobe products offer unique advantages for designing immersive user experiences. Leveraging these tools, I can swiftly translate concepts into wireframes, mockups, and interactive prototypes. The intuitive interfaces of Figma, Sketch, and XD enhance my productivity and enable seamless collaboration with stakeholders. These design tools have become indispensable companions that empower me to bring innovation and creativity to every project."
+        "paragraph": "Exploring design tools like Figma, Sketch, and XD has been instrumental in my evolution as a web/UI/UX designer. These powerful platforms are my creative playground, where ideas transform into tangible prototypes and designs. Figma's collaborative features, Sketch's robust plugins, and XD's seamless integration with other Adobe products offer unique advantages for designing immersive user experiences. Leveraging these tools, I can swiftly translate concepts into wireframes, mockups, and interactive prototypes. The intuitive interfaces of Figma, Sketch, and XD enhance my productivity and enable seamless collaboration with stakeholders. These design tools have become indispensable companions that empower me to bring innovation and creativity to every project.",
+        "image": "/img/figmasketchxd.png"
     },
     {
+        id: 8,
         "title": "Angular",
-        "paragraph": "Embracing Angular as a frontend developer has propelled my ability to craft dynamic and robust web applications. This powerful framework offers a comprehensive toolkit for building scalable and maintainable single-page applications (SPAs). Angular's component-based architecture and dependency injection streamline development workflows, allowing me to focus on crafting seamless user interfaces. With Angular, I can harness TypeScript's strong typing and modular design patterns to create performant applications that meet modern web standards. This framework empowers me to build interactive features and leverage built-in tools for routing, form handling, and state management. Angular has deepened my proficiency in frontend development, enabling me to deliver responsive and engaging user experiences."
+        "paragraph": "Embracing Angular as a frontend developer has propelled my ability to craft dynamic and robust web applications. This powerful framework offers a comprehensive toolkit for building scalable and maintainable single-page applications (SPAs). Angular's component-based architecture and dependency injection streamline development workflows, allowing me to focus on crafting seamless user interfaces. With Angular, I can harness TypeScript's strong typing and modular design patterns to create performant applications that meet modern web standards. This framework empowers me to build interactive features and leverage built-in tools for routing, form handling, and state management. Angular has deepened my proficiency in frontend development, enabling me to deliver responsive and engaging user experiences.",
+        "image": "/img/angular.png"
     },
     {
+        id: 9,
         "title": "Tailwind CSS",
-        "paragraph": "Exploring Tailwind CSS has revolutionized my approach to frontend development, emphasizing utility-first principles and rapid prototyping. This innovative CSS framework shifts the paradigm by providing a comprehensive set of utility classes that streamline styling and layout tasks. Tailwind CSS allows me to craft custom designs efficiently, enabling rapid iteration and responsiveness across devices. Its utility-first approach fosters consistency and scalability, empowering me to focus on functionality while maintaining aesthetic integrity. Leveraging Tailwind CSS's utility classes, I can quickly implement complex layouts and design patterns without the need for custom CSS. This framework has accelerated my development process, allowing me to build modern and intuitive user interfaces with precision and flexibility."
+        "paragraph": "Exploring Tailwind CSS has revolutionized my approach to frontend development, emphasizing utility-first principles and rapid prototyping. This innovative CSS framework shifts the paradigm by providing a comprehensive set of utility classes that streamline styling and layout tasks. Tailwind CSS allows me to craft custom designs efficiently, enabling rapid iteration and responsiveness across devices. Its utility-first approach fosters consistency and scalability, empowering me to focus on functionality while maintaining aesthetic integrity. Leveraging Tailwind CSS's utility classes, I can quickly implement complex layouts and design patterns without the need for custom CSS. This framework has accelerated my development process, allowing me to build modern and intuitive user interfaces with precision and flexibility.",
+        "image": "/img/tailwind.png"
     }
 ];
 

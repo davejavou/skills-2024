@@ -40,7 +40,7 @@ const ExploreMenu = () => {
         <Icon className="mr-2" size="xs" icon={faGripVertical} />
         Explore
       </button>
-      <ul>
+      <ul className="pointer-events-auto">
         {exploreLinks.map((link) => {
           return (
             <li key={link.id} className={`${isActive(link.path) ? 'text-white' : 'text-white/50'} hover:text-white duration-300`}>
@@ -59,9 +59,8 @@ const ExploreMenu = () => {
 // BURGER MENU
 const BurgerMenu = ({toggleContactMenu}) => {
   return (
-    <div className="flex flex-col w-[80px] h-screen pointer-events-auto">
-{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2796461954. */}
-      <button className="self-center w-[80px] h-[80px] mt-1 flex items-center justify-center text-white/50 hover:text-white duration-30" onClick={(e) => toggleContactMenu(e)}>
+    <div className="flex flex-col w-[80px] h-screen">
+      <button className="self-center w-[80px] h-[80px] mt-1 flex items-center justify-center text-white/50 hover:text-white duration-30 pointer-events-auto" onClick={(e) => toggleContactMenu(e)}>
         <Icon className="btn-icon" size="1x" icon={faBars} />
       </button>
       <div className="v-rule mb-10" />
@@ -79,13 +78,13 @@ export default function Nav({toggleContactMenu}) {
   }, {scope: container});
 
   return (
-    <nav ref={container} className="fixed top-0 left-0 flex justify-between w-screen h-24 pointer-events-none">
+    <nav ref={container} className="fixed top-0 left-0 flex justify-between w-screen h-24 bg-gradient-to-b from-black via-black/80 to-transparent pointer-events-none">
       <div className="flex gap-6 pr-10 pl-6 w-[calc(50%-3rem)]">
         <ExploreMenu />
         <div className="h-rule" />
       </div>
       <ReactSVG
-        src="/logo.svg"
+        src="/img/logo.svg"
         alt="Dave Cutter's Logo"
         id="logo"
         className="fill-white w-20 h-20 mt-2 ml-2"

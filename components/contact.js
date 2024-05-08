@@ -8,7 +8,7 @@ export default function Contact({ contactRef, toggleContactMenu }) {
     <div ref={contactRef}>
       <div id="links" className="left-[100vw] contact-box w-[34vw] px-16 pt-12 bg-sky-900/80">
         <ReactSVG
-          src="/logo.svg"
+          src="/img/logo.svg"
           alt="Dave Cutter's Logo"
           id="logo"
           className="fill-white w-32 h-32"

@@ -5,6 +5,7 @@ import Contact from "./contact";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+gsap.registerPlugin(useGSAP);
 
 export default function Layout({ children }) {
   // 🤔 This initial state is the opposite of what I think it should be, but works. Something wonky afoot. 
@@ -33,7 +34,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Background />
-      <main className="relative w-screen h-screen p-20">
+      <main className="relative w-screen min-h-screen p-24">
         {children}
       </main>
       <Nav toggleContactMenu={toggleContactMenu} />

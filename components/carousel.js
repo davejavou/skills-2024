@@ -30,7 +30,7 @@ function slideContent({ type, ssrc, psrc }) {
             }
             {(type === 'video') &&
                 // Note the capitalization in "playsInline" to get it through NextJS to the browser. "playsinline" was stripped
-                <video autoPlay loop muted playsInline poster={psrc} src={ssrc} type="video/mp4" className="drop-shadow-lg rounded-lg" />
+                <video autoPlay loop muted playsInline poster={psrc} src={ssrc} type="video/mp4" className="drop-shadow-lg rounded-lg " />
             }
             {(type === 'youtube') &&
                 <div className="flex flex-col justify-center content-center my-4">
@@ -43,7 +43,7 @@ function slideContent({ type, ssrc, psrc }) {
     );
 }
 
-export default function Carousel({ roleIndex, slides, sliderRef }) {
+export default function Carousel({ cardIndex, slides, sliderRef }) {
     // 🤔 Must sanitize projects data
 
     // Configure Carosuel
@@ -60,19 +60,20 @@ export default function Carousel({ roleIndex, slides, sliderRef }) {
     }
 
     return (
-        <>
+        // 🤔 I am still getting "Each child in a list should have a unique key prop" warnings on this line
+        <div key={`media-${cardIndex}`} className="card-media">
             {(slides.length < 2) ?
                 // No Slider if only one slide  
                 slides.map((slide) => slideContent(slide))
                 :
                 <Slider ref={sliderRef} {...sliderSettings} className="max-w-[1280px] mx-auto">
                     {slides.map((slide, slideIndex) =>
-                        <div key={`${roleIndex}-${slideIndex}`}> {/* This container div will be styled by react-slick carosuel. Do not style or add classes */}
+                        <div key={`slide-${cardIndex}-${slideIndex}`}> {/* This container div will be styled by react-slick carosuel. Do not style or add classes */}
                             {slideContent(slide)}
                         </div>
                     )}
                 </Slider>
             }
-        </>
+        </div>
     )
 }
